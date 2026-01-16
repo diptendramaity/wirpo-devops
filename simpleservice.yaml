@@ -4,8 +4,8 @@ metadata:
   name: my-service
 spec:
   selector:
-app.kubernetes.io/name: MyApp
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 9376
+    app.kubernetes.io/name: MyApp  # Correctly indented under selector
+  ports:                           # Correctly indented under spec
+    - protocol: TCP
+      port: 80
+      targetPort: 9376
