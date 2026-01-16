@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: custom-app-deployment
+  name: custom-new-app-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: custom-app
+      app: custom-new-app
   template:
     metadata:
       labels:
-        app: custom-app
+        app: custom-new-app
     spec:
       containers:
-        - name: custom-app-container
+        - name: custom-new-app-container
           image: diptendramaity/docker_1:latest
           ports:
             - containerPort: 80
