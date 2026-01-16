@@ -8,4 +8,4 @@ app.kubernetes.io/name: MyApp
   ports:
   - protocol: TCP
     port: 80
-    targetPort:
+    targetPort: 9376
