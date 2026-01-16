@@ -1,4 +1,4 @@
-apiversion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: custom-app-deployment
@@ -13,7 +13,7 @@ spec:
         app: custom-app
     spec:
       containers:
-        name: custom-app-container
-        image: diptendramaity/docker_1:latest
-        ports:
-          container Port: 80
+        - name: custom-app-container
+          image: diptendramaity/docker_1:latest
+          ports:
+            - containerPort: 80
